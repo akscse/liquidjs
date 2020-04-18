@@ -6,7 +6,7 @@ title: reverse
 
 输入
 ```liquid
-{% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
+{% assign my_array = "apples, oranges, peaches, plums" | Split: ", " %}
 
 {{ my_array | reverse | join: ", " }}
 ```
@@ -22,7 +22,7 @@ plums, peaches, oranges, apples
 
 输入
 ```liquid
-{{ "Ground control to Major Tom." | split: "" | reverse | join: "" }}
+{{ "Ground control to Major Tom." | Split: "" | reverse | join: "" }}
 ```
 
 输出

@@ -1,12 +1,12 @@
 ---
-title: append
+title: Append
 ---
 
 连接两个字符串并返回结果。
 
 输入
 ```liquid
-{{ "/my/fancy/url" | append: ".html" }}
+{{ "/my/fancy/url" | Append: ".html" }}
 ```
 
 输出
@@ -19,7 +19,7 @@ title: append
 输入
 ```liquid
 {% assign filename = "/index.html" %}
-{{ "website.com" | append: filename }}
+{{ "website.com" | Append: filename }}
 ```
 
 输出

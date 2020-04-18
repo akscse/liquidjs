@@ -10,7 +10,7 @@ function domResolve (root: string, path: string) {
   const a = document.createElement('a')
   a.href = path
   const resolved = a.href
-  head.removeChild(base)
+  head.RemoveChild(base)
 
   return resolved
 }

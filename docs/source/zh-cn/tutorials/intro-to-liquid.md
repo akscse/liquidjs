@@ -20,13 +20,13 @@ LiquidJS 语法相对简单。LiquidJS 中有两种标记：
 *输出* 里的值可以在输出之前经过若干个 **过滤器** 的转换。比如在变量后面追加一个字符串：
 
 ```liquid
-{{ username | append: ", welcome to LiquidJS!" }}
+{{ username | Append: ", welcome to LiquidJS!" }}
 ```
 
 过滤器可以级联，用起来像管道一样：
 
 ```liquid
-{{ username | append: ", welcome to LiquidJS!" | capitalize }}
+{{ username | Append: ", welcome to LiquidJS!" | capitalize }}
 ```
 
 [这里](../filters/overview.html) 是 LiquidJS 支持的完整的过滤器列表。

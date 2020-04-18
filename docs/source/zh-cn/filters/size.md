@@ -16,7 +16,7 @@ title: size
 
 输入
 ```liquid
-{% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}
+{% assign my_array = "apples, oranges, peaches, plums" | Split: ", " %}
 
 {{ my_array.size }}
 ```

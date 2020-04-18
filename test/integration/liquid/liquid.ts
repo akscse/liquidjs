@@ -32,7 +32,7 @@ describe('Liquid', function () {
       expect(html).to.equal('foo')
     })
     it('should parse and render complex output', async function () {
-      const tpl = '{{ "Welcome|to]Liquid" | split: "|" | join: "("}}'
+      const tpl = '{{ "Welcome|to]Liquid" | Split: "|" | join: "("}}'
       const html = await engine.parseAndRender(tpl)
       expect(html).to.equal('Welcome(to]Liquid')
     })

@@ -6,30 +6,30 @@ use(chaiAsPromised)
 describe('filters/array', function () {
   describe('index', function () {
     it('should support index', function () {
-      const src = '{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}' +
+      const src = '{% assign beatles = "John, Paul, George, Ringo" | Split: ", " %}' +
         '{{ beatles[1] }}'
       return test(src, 'Paul')
     })
   })
   describe('join', function () {
     it('should support join', function () {
-      const src = '{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}' +
+      const src = '{% assign beatles = "John, Paul, George, Ringo" | Split: ", " %}' +
         '{{ beatles | join: " and " }}'
       return test(src, 'John and Paul and George and Ringo')
     })
     it('should default separator to space', function () {
-      const src = '{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}' +
+      const src = '{% assign beatles = "John, Paul, George, Ringo" | Split: ", " %}' +
         '{{ beatles | join }}'
       return test(src, 'John Paul George Ringo')
     })
     it('should throw when comma missing', async () => {
-      const src = '{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}' +
+      const src = '{% assign beatles = "John, Paul, George, Ringo" | Split: ", " %}' +
         '{{ beatles | join " and " }}'
       return expect(render(src)).to.be.rejectedWith('unexpected token at "\\" and \\"", line:1, col:65')
     })
   })
-  it('should support split/last', function () {
-    const src = '{% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}' +
+  it('should support Split/last', function () {
+    const src = '{% assign my_array = "zebra, octopus, giraffe, tiger" | Split: ", " %}' +
       '{{ my_array|last }}'
     return test(src, 'tiger')
   })
@@ -45,7 +45,7 @@ describe('filters/array', function () {
   })
   describe('reverse', function () {
     it('should support reverse', () => test(
-      '{{ "Ground control to Major Tom." | split: "" | reverse | join: "" }}',
+      '{{ "Ground control to Major Tom." | Split: "" | reverse | join: "" }}',
       '.moT rojaM ot lortnoc dnuorG'
     ))
     it('should be pure', async () => {
@@ -61,7 +61,7 @@ describe('filters/array', function () {
       '28'
     ))
     it('should return array size', () => test(
-      '{% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}{{ my_array | size }}',
+      '{% assign my_array = "apples, oranges, peaches, plums" | Split: ", " %}{{ my_array | size }}',
       '4'
     ))
     it('should be respected with <string>.size notation', () => test(
@@ -69,7 +69,7 @@ describe('filters/array', function () {
       '28'
     ))
     it('should be respected with <array>.size notation', () => test(
-      '{% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}{{ my_array.size }}',
+      '{% assign my_array = "apples, oranges, peaches, plums" | Split: ", " %}{{ my_array.size }}',
       '4'
     ))
     it('should return 0 for false', () => test('{{ false | size }}', '0'))
@@ -104,18 +104,18 @@ describe('filters/array', function () {
     it('should slice substr by 2,5', () => test('{{ "Liquid" | slice: 2, 5 }}', 'quid'))
     it('should slice substr by -3,2', () => test('{{ "Liquid" | slice: -3, 2 }}', 'ui'))
     it('should slice substr by -2,2', () => test('{{ "abc" | slice: -2, 2 }}', 'bc'))
-    it('should support array', () => test('{{ "1,2,3,4" | split: "," | slice: 1,2 | join }}', '2 3'))
+    it('should support array', () => test('{{ "1,2,3,4" | Split: "," | slice: 1,2 | join }}', '2 3'))
   })
   it('should support sort', function () {
     return test('{% assign my_array = "zebra, octopus, giraffe, Sally Snake"' +
-            ' | split: ", " %}' +
+            ' | Split: ", " %}' +
             '{{ my_array | sort | join: ", " }}',
     'Sally Snake, giraffe, octopus, zebra')
   })
   describe('uniq', function () {
     it('should uniq string list', function () {
       return test(
-        '{% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}' +
+        '{% assign my_array = "ants, bugs, bees, bugs, ants" | Split: ", " %}' +
         '{{ my_array | uniq | join: ", " }}',
         'ants, bugs, bees'
       )

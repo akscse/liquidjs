@@ -6,7 +6,7 @@ title: json
 
 输入
 ```liquid
-{% assign arr = "foo bar coo" | split: " " %}
+{% assign arr = "foo bar coo" | Split: " " %}
 {{ arr | json }}
 ```
 

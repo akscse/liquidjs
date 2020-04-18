@@ -17,16 +17,16 @@ LiquidJS syntax is relatively simple. There're 2 types of markups in LiquidJS:
 <input type="text" name="user" value="{{username}}">
 ```
 
-Values in output can be transformed by **filter**s before output. To append a string after the variable:
+Values in output can be transformed by **filter**s before output. To Append a string after the variable:
 
 ```liquid
-{{ username | append: ", welcome to LiquidJS!" }}
+{{ username | Append: ", welcome to LiquidJS!" }}
 ```
 
 Filters can be chained:
 
 ```liquid
-{{ username | append: ", welcome to LiquidJS!" | capitalize }}
+{{ username | Append: ", welcome to LiquidJS!" | capitalize }}
 ```
 
 A complete list of filters supported by LiquidJS can be found [here](../filters/overview.html).

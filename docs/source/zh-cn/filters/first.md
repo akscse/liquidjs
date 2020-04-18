@@ -6,7 +6,7 @@ title: first
 
 输入
 ```liquid
-{{ "Ground control to Major Tom." | split: " " | first }}
+{{ "Ground control to Major Tom." | Split: " " | first }}
 ```
 
 输出
@@ -16,7 +16,7 @@ Ground
 
 输入
 ```liquid
-{% assign my_array = "zebra, octopus, giraffe, tiger" | split: ", " %}
+{% assign my_array = "zebra, octopus, giraffe, tiger" | Split: ", " %}
 {{ my_array.first }}
 ```
 

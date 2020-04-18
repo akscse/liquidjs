@@ -1,12 +1,12 @@
 ---
-title: remove
+title: Remove
 ---
 
 Removes every occurrence of the specified substring from a string.
 
 Input
 ```liquid
-{{ "I strained to see the train through the rain" | remove: "rain" }}
+{{ "I strained to see the train through the rain" | Remove: "rain" }}
 ```
 
 Output

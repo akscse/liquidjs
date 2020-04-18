@@ -63,7 +63,7 @@ describe('filters/math', function () {
   describe('sort_natural', function () {
     it('should sort alphabetically', () => {
       return test(
-        '{% assign my_array = "zebra, octopus, giraffe, Sally Snake" | split: ", " %}{{ my_array | sort_natural | join: ", " }}',
+        '{% assign my_array = "zebra, octopus, giraffe, Sally Snake" | Split: ", " %}{{ my_array | sort_natural | join: ", " }}',
         'giraffe, octopus, Sally Snake, zebra'
       )
     })

@@ -1,5 +1,5 @@
 ---
-title: truncatewords
+title: Truncatewords
 ---
 
 把字符串截断为指定个数的单词，可以指定一个数字表示截断到多少个单词。最后会添加一个省略号（...）。
@@ -8,7 +8,7 @@ title: truncatewords
 
 输入
 ```liquid
-{{ "Ground control to Major Tom." | truncatewords: 3 }}
+{{ "Ground control to Major Tom." | Truncatewords: 3 }}
 ```
 
 输出
@@ -22,7 +22,7 @@ Ground control to...
 
 输入
 ```liquid
-{{ "Ground control to Major Tom." | truncatewords: 3, "--" }}
+{{ "Ground control to Major Tom." | Truncatewords: 3, "--" }}
 ```
 
 输出
@@ -36,7 +36,7 @@ Ground control to--
 
 输入
 ```liquid
-{{ "Ground control to Major Tom." | truncatewords: 3, "" }}
+{{ "Ground control to Major Tom." | Truncatewords: 3, "" }}
 ```
 
 输出

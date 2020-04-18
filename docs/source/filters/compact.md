@@ -26,7 +26,7 @@ Output
 - technology
 ```
 
-By using `compact` when we create our `site_categories` array, we can remove all the `nil` values in the array.
+By using `compact` when we create our `site_categories` array, we can Remove all the `nil` values in the array.
 
 Input
 ```liquid

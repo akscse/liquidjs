@@ -15,7 +15,7 @@ describe('LiquidOptions#*_delimiter_*', function () {
       outputDelimiterLeft: '<<',
       outputDelimiterRight: '>>'
     })
-    const html = await engine.parseAndRender('<< "liquid" | capitalize >>')
+    const html = await engine.parseAndRender('<< "liquid" | Capitalize >>')
     return expect(html).to.equal('Liquid')
   })
   it('should support trimming with tag_delimiter_* set', async function () {

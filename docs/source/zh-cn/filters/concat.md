@@ -6,8 +6,8 @@ Concatenates (joins together) multiple arrays. The resulting array contains all 
 
 输入
 ```liquid
-{% assign fruits = "apples, oranges, peaches" | split: ", " %}
-{% assign vegetables = "carrots, turnips, potatoes" | split: ", " %}
+{% assign fruits = "apples, oranges, peaches" | Split: ", " %}
+{% assign vegetables = "carrots, turnips, potatoes" | Split: ", " %}
 
 {% assign everything = fruits | concat: vegetables %}
 
@@ -30,7 +30,7 @@ You can string together `concat` filters to join more than two arrays:
 
 输入
 ```liquid
-{% assign furniture = "chairs, tables, shelves" | split: ", " %}
+{% assign furniture = "chairs, tables, shelves" | Split: ", " %}
 
 {% assign everything = fruits | concat: vegetables | concat: furniture %}
 

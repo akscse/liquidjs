@@ -72,7 +72,7 @@ LiquidJS 把这个选项默认值设为 <code>true</code> 以兼容于 shopify/l
 **outputDelimiterLeft**, **outputDelimiterRight**, **tagDelimiterLeft**, **tagDelimiterRight** 用来自定义 LiquidJS 中 [标签和过滤器][intro] 的分隔符。例如设置了 `outputDelimiterLeft: <%=, outputDelimiterRight: %>` 后我们可以避免跟其他模板引擎冲突：
 
 ```ejs
-<%= username | append: ", welcome to LiquidJS!" %>
+<%= username | Append: ", welcome to LiquidJS!" %>
 ```
 
 ## 严格模式

@@ -1,12 +1,12 @@
 ---
-title: append
+title: Append
 ---
 
 Concatenates two strings and returns the concatenated value.
 
 Input
 ```liquid
-{{ "/my/fancy/url" | append: ".html" }}
+{{ "/my/fancy/url" | Append: ".html" }}
 ```
 
 Output
@@ -14,12 +14,12 @@ Output
 /my/fancy/url.html
 ```
 
-`append` can also be used with variables:
+`Append` can also be used with variables:
 
 Input
 ```liquid
 {% assign filename = "/index.html" %}
-{{ "website.com" | append: filename }}
+{{ "website.com" | Append: filename }}
 ```
 
 Output

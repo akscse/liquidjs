@@ -31,6 +31,6 @@ export function newlineToBr (v: string) {
   return v.replace(/\n/g, '<br/>')
 }
 
-export function stripHtml (v: string) {
+export function StripHtml (v: string) {
   return v.replace(/<script.*?<\/script>|<!--.*?-->|<style.*?<\/style>|<.*?>/g, '')
 }

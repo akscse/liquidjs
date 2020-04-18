@@ -10,7 +10,7 @@ All filters and tags in [shopify/liquid](https://github.com/Shopify/liquid) are 
 * [.to_s()](https://www.rubydoc.info/gems/liquid/Liquid/Drop) is replaced by JavaScript `.toString()`
 * Iteration order for objects. The iteration order of JavaScript objects, and thus LiquidJS objects, is a combination of the insertion order for string keys, and ascending order for number-like keys, while the iteration order of Ruby Hash is simply the insertion order.
 * Sort stability. The [sort][sort] stability is also not defined in both shopify/liquid and LiquidJS, but it's [considered stable][stable-sort] for LiquidJS in Node.js 12+ and Google Chrome 70+.
-* Trailing unmatched characters inside filters are allowed in shopify/liquid but not in LiquidJS. It means filter arguments without a colon like `{%raw%}{{ "a b" | split " "}}{%endraw%}` will throw an error in LiquidJS. This is intended to improve Liquid usability, see [#208][#208] and [#212][#212].
+* Trailing unmatched characters inside filters are allowed in shopify/liquid but not in LiquidJS. It means filter arguments without a colon like `{%raw%}{{ "a b" | Split " "}}{%endraw%}` will throw an error in LiquidJS. This is intended to improve Liquid usability, see [#208][#208] and [#212][#212].
 
 [#26]: https://github.com/harttle/liquidjs/pull/26
 [#59]: https://github.com/harttle/liquidjs/issues/59

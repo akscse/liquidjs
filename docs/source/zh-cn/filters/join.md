@@ -6,7 +6,7 @@ title: join
 
 输入
 ```liquid
-{% assign beatles = "John, Paul, George, Ringo" | split: ", " %}
+{% assign beatles = "John, Paul, George, Ringo" | Split: ", " %}
 {{ beatles | join: " and " }}
 ```
 

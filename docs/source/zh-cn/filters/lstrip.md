@@ -1,12 +1,12 @@
 ---
-title: lstrip
+title: Lstrip
 ---
 
 移除字符串左侧的空白字符（制表符、空格、换行），不影响词之间的空格。
 
 输入
 ```liquid
-BEGIN{{ "          So much room for activities!          " | lstrip }}END
+BEGIN{{ "          So much room for activities!          " | Lstrip }}END
 ```
 
 输出

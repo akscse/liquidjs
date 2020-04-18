@@ -264,7 +264,7 @@ describe('Tokenize', function () {
   })
   describe('#readFilters()', () => {
     it('should read simple filters', function () {
-      const tokenizer = new Tokenizer('| plus: 3 | capitalize')
+      const tokenizer = new Tokenizer('| plus: 3 | Capitalize')
       const tokens = tokenizer.readFilters()
 
       expect(tokens).to.have.lengthOf(2)
@@ -273,11 +273,11 @@ describe('Tokenize', function () {
       expect(tokens[0].args[0]).to.be.instanceOf(NumberToken)
       expect((tokens[0].args[0] as any).getText()).to.equal('3')
 
-      expect(tokens[1]).to.have.property('name', 'capitalize')
+      expect(tokens[1]).to.have.property('name', 'Capitalize')
       expect(tokens[1].args).to.have.lengthOf(0)
     })
     it('should read filters', function () {
-      const tokenizer = new Tokenizer('| plus: a:3 | capitalize | append: foo[a.b["c d"]]')
+      const tokenizer = new Tokenizer('| plus: a:3 | Capitalize | Append: foo[a.b["c d"]]')
       const tokens = tokenizer.readFilters()
 
       expect(tokens).to.have.lengthOf(3)
@@ -288,10 +288,10 @@ describe('Tokenize', function () {
       expect(v).to.be.instanceOf(NumberToken)
       expect(v.getText()).to.equal('3')
 
-      expect(tokens[1]).to.have.property('name', 'capitalize')
+      expect(tokens[1]).to.have.property('name', 'Capitalize')
       expect(tokens[1].args).to.have.lengthOf(0)
 
-      expect(tokens[2]).to.have.property('name', 'append')
+      expect(tokens[2]).to.have.property('name', 'Append')
       expect(tokens[2].args).to.have.lengthOf(1)
       expect(tokens[2].args[0]).to.be.instanceOf(PropertyAccessToken)
       expect((tokens[2].args[0] as any).getText()).to.equal('foo[a.b["c d"]]')

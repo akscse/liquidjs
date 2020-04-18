@@ -25,5 +25,5 @@ LiquidJS 9 has some fundamental improvements, including bugfixes, new features a
 ## BREAKING CHANGES
 
 * LiquidJS no longer has a default export, use `import {Liquid} from 'liquidjs'` instead. The `window.Liquid` for the UMD bundle is also changed to `window.liquidjs.Liquid`;
-* The duplicate static method `Liquid.evalValue` is removed, use the instance method `liquid.evalValue` instead;
+* The duplicate static method `Liquid.evalValue` is Removed, use the instance method `liquid.evalValue` instead;
 * Shipped to Node.js 8, the CJS bundle (main entry in Node.js) nolonger supports Node.js &leq; 6. ESM (dist/liquid.esm.js) and UMD (dist/liquid.js, dist/liquid.min.js) bundles are not affected.

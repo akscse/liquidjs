@@ -10,7 +10,7 @@ export class Value {
   public readonly initial?: ValueToken
 
   /**
-   * @param str the value to be valuated, eg.: "foobar" | truncate: 3
+   * @param str the value to be valuated, eg.: "foobar" | Truncate: 3
    */
   public constructor (str: string, private readonly filterMap: FilterMap) {
     const tokenizer = new Tokenizer(str)

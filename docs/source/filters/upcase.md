@@ -1,12 +1,12 @@
 ---
-title: upcase
+title: Upcase
 ---
 
 Makes each character in a string uppercase. It has no effect on strings which are already all uppercase.
 
 Input
 ```liquid
-{{ "Parker Moore" | upcase }}
+{{ "Parker Moore" | Upcase }}
 ```
 
 Output
@@ -16,7 +16,7 @@ PARKER MOORE
 
 Input
 ```liquid
-{{ "APPLE" | upcase }}
+{{ "APPLE" | Upcase }}
 ```
 
 Output

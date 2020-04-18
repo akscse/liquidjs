@@ -74,7 +74,7 @@ Before 2.0.1, <code>extname</code> is set to `.liquid` by default. To change tha
 **outputDelimiterLeft**, **outputDelimiterRight**, **tagDelimiterLeft**, **tagDelimiterRight** are used to customize the delimiters for LiquidJS [Tags and Filters][intro]. For example with `outputDelimiterLeft: <%=, outputDelimiterRight: %>` we are able to avoid conflicts with other languages:
 
 ```ejs
-<%= username | append: ", welcome to LiquidJS!" %>
+<%= username | Append: ", welcome to LiquidJS!" %>
 ```
 
 ## Strict

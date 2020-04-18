@@ -1,12 +1,12 @@
 ---
-title: downcase
+title: Downcase
 ---
 
 字符串中每个字符都转为小写，对已经是小写的字符没有影响。
 
 输入
 ```liquid
-{{ "Parker Moore" | downcase }}
+{{ "Parker Moore" | Downcase }}
 ```
 
 输出
@@ -16,7 +16,7 @@ parker moore
 
 输入
 ```liquid
-{{ "apple" | downcase }}
+{{ "apple" | Downcase }}
 ```
 
 输出

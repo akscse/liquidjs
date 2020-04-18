@@ -38,7 +38,7 @@
 
 ### Bug Fixes
 
-* throws on invalid arguments for prepend/append, fixes [#208](https://github.com/harttle/liquidjs/issues/208) ([479c633](https://github.com/harttle/liquidjs/commit/479c633))
+* throws on invalid arguments for Prepend/append, fixes [#208](https://github.com/harttle/liquidjs/issues/208) ([479c633](https://github.com/harttle/liquidjs/commit/479c633))
 
 ## [9.11.4](https://github.com/harttle/liquidjs/compare/v9.11.3...v9.11.4) (2020-03-23)
 
@@ -53,14 +53,14 @@
 ### Performance Improvements
 
 * introduce AST to avoid reparse ([d2d6a38](https://github.com/harttle/liquidjs/commit/d2d6a38))
-* remove instanceof DelimitedToken ([1673e84](https://github.com/harttle/liquidjs/commit/1673e84))
+* Remove instanceof DelimitedToken ([1673e84](https://github.com/harttle/liquidjs/commit/1673e84))
 
 ## [9.11.2](https://github.com/harttle/liquidjs/compare/v9.11.1...v9.11.2) (2020-03-14)
 
 
 ### Performance Improvements
 
-* remove transient strings to reduce memory ([3dfdf98](https://github.com/harttle/liquidjs/commit/3dfdf98))
+* Remove transient strings to reduce memory ([3dfdf98](https://github.com/harttle/liquidjs/commit/3dfdf98))
 
 ## [9.11.1](https://github.com/harttle/liquidjs/compare/v9.11.0...v9.11.1) (2020-03-09)
 
@@ -80,7 +80,7 @@
 
 ### Features
 
-* async cache.read()/write(), remove .has() ([61dac49](https://github.com/harttle/liquidjs/commit/61dac49))
+* async cache.read()/write(), Remove .has() ([61dac49](https://github.com/harttle/liquidjs/commit/61dac49))
 
 # [9.10.0](https://github.com/harttle/liquidjs/compare/v9.9.0...v9.10.0) (2020-03-03)
 
@@ -170,7 +170,7 @@
 
 ### Bug Fixes
 
-* remove node dependencies for esm bundle, see [#173](https://github.com/harttle/liquidjs/issues/173) ([04df929](https://github.com/harttle/liquidjs/commit/04df929))
+* Remove node dependencies for esm bundle, see [#173](https://github.com/harttle/liquidjs/issues/173) ([04df929](https://github.com/harttle/liquidjs/commit/04df929))
 
 # [9.4.0](https://github.com/harttle/liquidjs/compare/v9.3.1...v9.4.0) (2019-11-14)
 
@@ -244,7 +244,7 @@
 to write rendered html.
 * ship to Node.js 8, the dist/liquid.cjs.js (main) nolonger
 supports Node.js 6, other bundles are also provided via dist/liquid.esm.js, dist/liquid.js (ES5 umd) and liquid.min.js (minified ES5 umd)
-* remove default export, now should be used like import
+* Remove default export, now should be used like import
 {Liquid} from 'liquidjs'
 
 ## [8.5.3](https://github.com/harttle/liquidjs/compare/v8.5.2...v8.5.3) (2019-08-25)
@@ -408,7 +408,7 @@ supports Node.js 6, other bundles are also provided via dist/liquid.esm.js, dist
 
 ### Bug Fixes
 
-* **#108:** remove absolute path in emitted d.ts ([53a835a](https://github.com/harttle/liquidjs/commit/53a835a)), closes [#108](https://github.com/harttle/liquidjs/issues/108)
+* **#108:** Remove absolute path in emitted d.ts ([53a835a](https://github.com/harttle/liquidjs/commit/53a835a)), closes [#108](https://github.com/harttle/liquidjs/issues/108)
 
 # [7.3.0](https://github.com/harttle/liquidjs/compare/v7.2.2...v7.3.0) (2019-02-24)
 
@@ -429,7 +429,7 @@ supports Node.js 6, other bundles are also provided via dist/liquid.esm.js, dist
 
 ### Bug Fixes
 
-* default length for truncate and truncatewords ([56c7992](https://github.com/harttle/liquidjs/commit/56c7992))
+* default length for truncate and Truncatewords ([56c7992](https://github.com/harttle/liquidjs/commit/56c7992))
 
 # [7.2.0](https://github.com/harttle/liquidjs/compare/v7.1.0...v7.2.0) (2019-02-20)
 

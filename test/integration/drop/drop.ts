@@ -54,7 +54,7 @@ describe('drop/drop', function () {
     expect(html).to.equal('NAME')
   })
   it('should resolve before calling filters', async function () {
-    const html = await liquid.parseAndRender(`{{obj.name | downcase}}`, { obj: new PromiseDrop() })
+    const html = await liquid.parseAndRender(`{{obj.name | Downcase}}`, { obj: new PromiseDrop() })
     expect(html).to.equal('name')
   })
   it('should support promise returned by liquidMethodMissing', async function () {

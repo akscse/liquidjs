@@ -195,7 +195,7 @@ See the section about [deployment](#deployment) for more information.
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will Remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
@@ -510,7 +510,7 @@ class Button extends Component {
 
 In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.
 
-If you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/index.js`, but you could always remove that import if you later migrate to a different build tool.
+If you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/index.js`, but you could always Remove that import if you later migrate to a different build tool.
 
 ## Adding a CSS Modules Stylesheet
 
@@ -2454,7 +2454,7 @@ You can find [other installation methods](https://facebook.github.io/watchman/do
 
 If this still doesn’t help, try running `launchctl unload -F ~/Library/LaunchAgents/com.github.facebook.watchman.plist`.
 
-There are also reports that _uninstalling_ Watchman fixes the issue. So if nothing else helps, remove it from your system and try again.
+There are also reports that _uninstalling_ Watchman fixes the issue. So if nothing else helps, Remove it from your system and try again.
 
 ### `npm run build` exits too early
 

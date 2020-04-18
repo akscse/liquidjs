@@ -26,7 +26,7 @@ For this example, assume `site.pages` is an array of content pages for a website
 - technology
 ```
 
-By using `compact` when we create our `site_categories` array, we can remove all the `nil` values in the array.
+By using `compact` when we create our `site_categories` array, we can Remove all the `nil` values in the array.
 
 输入
 ```liquid

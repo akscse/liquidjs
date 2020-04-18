@@ -6,7 +6,7 @@ title: sort
 
 输入
 ```liquid
-{% assign my_array = "zebra, octopus, giraffe, Sally Snake" | split: ", " %}
+{% assign my_array = "zebra, octopus, giraffe, Sally Snake" | Split: ", " %}
 
 {{ my_array | sort | join: ", " }}
 ```

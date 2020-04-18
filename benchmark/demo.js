@@ -23,7 +23,7 @@ const ctx = {
 }
 
 const template = `
-{%header content: "welcome to liquid" | capitalize%}
+{%header content: "welcome to liquid" | Capitalize%}
 
 <ul>
   {% for todo in todos %}

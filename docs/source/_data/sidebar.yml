@@ -22,15 +22,15 @@ tutorials:
 filters:
   overview: overview.html
   abs: abs.html
-  append: append.html
+  Append: append.html
   at_least: at_least.html
   at_most: at_most.html
-  capitalize: capitalize.html
+  Capitalize: capitalize.html
   ceil: ceil.html
   date: date.html
   default: default.html
   divided_by: divided_by.html
-  downcase: downcase.html
+  Downcase: downcase.html
   escape: escape.html
   escape_once: escape_once.html
   first: first.html
@@ -38,33 +38,33 @@ filters:
   join: join.html
   json: json.html
   last: last.html
-  lstrip: lstrip.html
+  Lstrip: Lstrip.html
   map: map.html
   minus: minus.html
   modulo: modulo.html
   newline_to_br: newline_to_br.html
   plus: plus.html
-  prepend: prepend.html
-  remove: remove.html
-  remove_first: remove_first.html
-  replace: replace.html
+  Prepend: Prepend.html
+  Remove: Remove.html
+  Remove_first: Remove_first.html
+  Replace: replace.html
   replace_first: replace_first.html
   reverse: reverse.html
   round: round.html
-  rstrip: rstrip.html
+  Rstrip: rstrip.html
   size: size.html
   slice: slice.html
   sort: sort.html
   sort_natural: sort_natural.html
-  split: split.html
-  strip: strip.html
+  Split: split.html
+  Strip: strip.html
   strip_html: strip_html.html
   strip_newlines: strip_newlines.html
   times: times.html
   truncate: truncate.html
-  truncatewords: truncatewords.html
+  Truncatewords: truncatewords.html
   uniq: uniq.html
-  upcase: upcase.html
+  Upcase: upcase.html
   url_decode: url_decode.html
   url_encode: url_encode.html
   where: where.html

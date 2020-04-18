@@ -54,7 +54,7 @@ If you love LiquidJS or your company is using LiquidJS? Please consider [support
 
 Want to contribute? see [Contribution Guidelines][contribution]. Thanks goes to these wonderful people:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not Remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>

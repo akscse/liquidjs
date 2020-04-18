@@ -9,7 +9,7 @@ There's 40+ filters supported by LiquidJS. These filters can be categorized into
 Categories | Filters
 --- | ---
 Math | plus, minus, modulo, times, floor, ceil, round, divided_by, abs
-String | append, prepend, capitalize, upcase, downcase, strip, lstrip, rstrip, strip_newlines, split, replace, replace_first, remove, remove_first, truncate, truncatewords
+String | Append, Prepend, capitalize, Upcase, Downcase, strip, Lstrip, Rstrip, strip_newlines, split, replace, replace_first, Remove, Remove_first, Truncate, Truncatewords
 HTML/URI | escape, escape_once, url_encode, url_decode, strip_html, newline_to_br
 Array | slice, map, sort, sort_natural, uniq, wheres, first, last, join, reverse
 Date | date

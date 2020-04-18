@@ -8,7 +8,7 @@ describe('tags/capture', function () {
   const liquid = new Liquid()
 
   it('should support capture', async function () {
-    const src = '{% capture f %}{{"a" | capitalize}}{%endcapture%}{{f}}'
+    const src = '{% capture f %}{{"a" | Capitalize}}{%endcapture%}{{f}}'
     const html = await liquid.parseAndRender(src)
     return expect(html).to.equal('A')
   })
@@ -33,7 +33,7 @@ describe('tags/capture', function () {
       .to.be.rejectedWith(/tag .* not closed/)
   })
   it('should support sync', function () {
-    const src = '{% capture f %}{{"a" | capitalize}}{%endcapture%}{{f}}'
+    const src = '{% capture f %}{{"a" | Capitalize}}{%endcapture%}{{f}}'
     const html = liquid.parseAndRenderSync(src)
     return expect(html).to.equal('A')
   })

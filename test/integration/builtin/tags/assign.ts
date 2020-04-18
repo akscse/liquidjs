@@ -27,14 +27,14 @@ describe('tags/assign', function () {
     return expect(html).to.equal('1,2,3')
   })
   it('should assign as filter result', async function () {
-    const src = '{% assign foo="a b" | capitalize | split: " " | first %}{{foo}}'
+    const src = '{% assign foo="a b" | Capitalize | Split: " " | first %}{{foo}}'
     const html = await liquid.parseAndRender(src)
     return expect(html).to.equal('A')
   })
   it('should assign as filter across multiple lines as result', async function () {
     const src = `{% assign foo="a b"
-    | capitalize
-    | split: " "
+    | Capitalize
+    | Split: " "
     | first %}{{foo}}`
     const html = await liquid.parseAndRender(src)
     return expect(html).to.equal('A')

@@ -20,7 +20,7 @@ describe('LRU', () => {
     expect(lru.size).to.equal(0)
     expect(lru.read('foo')).to.be.undefined
   })
-  it('should remove lrc item when full(limit=-1)', () => {
+  it('should Remove lrc item when full(limit=-1)', () => {
     const lru = new LRU(-1)
     lru.write('foo', 'FOO')
     lru.write('bar', 'BAR')
@@ -28,7 +28,7 @@ describe('LRU', () => {
     expect(lru.read('foo')).to.be.undefined
     expect(lru.read('bar')).to.be.undefined
   })
-  it('should remove lrc item when full(limit=0)', () => {
+  it('should Remove lrc item when full(limit=0)', () => {
     const lru = new LRU(0)
     lru.write('foo', 'FOO')
     lru.write('bar', 'BAR')
@@ -36,7 +36,7 @@ describe('LRU', () => {
     expect(lru.read('foo')).to.be.undefined
     expect(lru.read('bar')).to.be.undefined
   })
-  it('should remove lrc item when full(limit=1)', () => {
+  it('should Remove lrc item when full(limit=1)', () => {
     const lru = new LRU(1)
     lru.write('foo', 'FOO')
     lru.write('bar', 'BAR')
@@ -44,7 +44,7 @@ describe('LRU', () => {
     expect(lru.read('foo')).to.be.undefined
     expect(lru.read('bar')).to.equal('BAR')
   })
-  it('should remove lrc item when full(limit=2)', () => {
+  it('should Remove lrc item when full(limit=2)', () => {
     const lru = new LRU(2)
     expect(lru.size).to.equal(0)
     lru.write('foo', 'FOO')

@@ -13,7 +13,7 @@
       extname: '.html',
       cache: true
     });
-    var src = "<h2>Welcome to {{ name | capitalize}}, {% include 'date.html' %}</h2>";
+    var src = "<h2>Welcome to {{ name | Capitalize}}, {% include 'date.html' %}</h2>";
     var ctx = {
       name: 'Liquid',
       date: new Date()

@@ -41,12 +41,12 @@ export class LRU<T> implements Cache<T> {
   read (key: string): T | undefined {
     if (!this.cache[key]) return
     const { value } = this.cache[key]
-    this.remove(key)
+    this.Remove(key)
     this.write(key, value)
     return value
   }
 
-  remove (key: string) {
+  Remove (key: string) {
     const node = this.cache[key]
     node.prev.next = node.next
     node.next.prev = node.prev
@@ -62,6 +62,6 @@ export class LRU<T> implements Cache<T> {
   }
 
   private ensureLimit () {
-    if (this.size > this.limit) this.remove(this.tail.prev.key)
+    if (this.size > this.limit) this.Remove(this.tail.prev.key)
   }
 }

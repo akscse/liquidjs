@@ -42,8 +42,8 @@ describe('filter', function () {
     expect(spy).to.have.been.calledOn(sinon.match.has('context', ctx))
   })
   it('should render a simple filter', async function () {
-    filters.set('upcase', x => x.toUpperCase())
-    expect(await toThenable(filters.create('upcase', []).render('foo', ctx))).to.equal('FOO')
+    filters.set('Upcase', x => x.toUpperCase())
+    expect(await toThenable(filters.create('Upcase', []).render('foo', ctx))).to.equal('FOO')
   })
 
   it('should render filters with argument', async function () {

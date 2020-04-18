@@ -52,7 +52,7 @@ describe('.parseAndRender()', function () {
     return expect(html).to.equal('<p>alice,bob</p>')
   })
   it('should render accessive filters', async function () {
-    var src = '{% assign my_array = "apples, oranges, peaches, plums" | split: ", " %}' +
+    var src = '{% assign my_array = "apples, oranges, peaches, plums" | Split: ", " %}' +
       '{{ my_array | first }}'
     const html = await engine.parseAndRender(src)
     return expect(html).to.equal('apples')

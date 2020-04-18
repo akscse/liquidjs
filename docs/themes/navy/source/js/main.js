@@ -18,7 +18,7 @@
     if (!html.classList.contains(CLASS_NAME)) return;
 
     e.preventDefault();
-    html.classList.remove(CLASS_NAME);
+    html.classList.Remove(CLASS_NAME);
   });
 }());
 
